@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif';
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 1px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,5,43,0.8577556022408963) 35%, rgba(255,0,121,1) 100%);
+}
+/* .background{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 1px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,5,43,0.8577556022408963) 35%, rgba(255,0,121,1) 100%);
+} */
+nav{
+    height: 100px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    position: relative;
+}
+
+.box{
+    border: 2px solid white;
+    font-size: 6vw;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: #775259;
+}
+
+.info{
+    font-size: 32px;
+    font-weight: bold;
+    color: antiquewhite
+}
+
+.gameInfo{
+    padding: 0 44px;
+}
+
+.gameInfo h1{
+    height: 61px;
+    font-size: 43px;
+    color: floralwhite;
+    padding: 2px;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0px;
+    padding: 7px 17px;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+    margin-left: 5px;
+}
+
+.line{
+    background: hsla(60, 12%, 97%, 0.909);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width:953){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1rem;
+    }
+}
